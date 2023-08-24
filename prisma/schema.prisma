@@ -37,7 +37,7 @@ model BankAccount {
   initialBalance Float           @map("initial_balance")
   type           BankAccountType
   color          String
-  transaction    Transaction[]
+  transactions   Transaction[]
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
