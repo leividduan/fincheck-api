@@ -5,10 +5,7 @@ import { ValidateCategoryOwnershipService } from 'src/modules/categories/service
 import { CreateTransactionDto } from '../dto/create-transaction.dto';
 import { UpdateTransactionDto } from '../dto/update-transaction.dto';
 import { ValidateTransactionOwnershipService } from './validate-transaction-ownership.service';
-import { filter } from 'rxjs';
 import { TransactionType } from '../entities/Transaction';
-
-type NewType = ValidateBankAccountOwnershipService;
 
 @Injectable()
 export class TransactionsService {
